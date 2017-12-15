@@ -14,7 +14,7 @@ module.exports = {
             loader: 'babel-loader',
             options: {
               babelrc: false,
-              presets: [reactPresetPath]
+              presets: [reactPresetPath, resolve.sync('babel-preset-env'), resolve.sync('babel-preset-stage-0')]
             }
           }
         ]
